@@ -22,14 +22,12 @@ function winner(opp, me) {
 for (const round of lines) {
   if (round === "") continue;
   const [opp, me] = round.split(" ");
-  console.log(opp, me);
   const didWin = winner(opp, me);
   
   const winScore = didWin === 0 ? 3 : didWin > 0 ? 6 : 0;
   const handScore = me === "Y"? 2 : me === "X" ? 1 : 3;
   const roundScore = winScore + handScore;
 
-  console.log(winScore, handScore);
   score += roundScore;
 
 }

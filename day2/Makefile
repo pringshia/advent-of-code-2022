@@ -1,6 +1,5 @@
-all:
+all: 1 2
+1:
 	deno run --allow-read p1.ts
-p1:
-	deno run --allow-read p1.ts
-p2:
+2:
 	deno run --allow-read p2.ts
