@@ -14,8 +14,8 @@ const tailcounts = new Array(height)
 
 const CONNECTED_KNOTS = 10 - 1;
 
-let hi = height / 2; // sort of had to guess these values
-let hj = width / 2; // we start somewhere in the middle
+let hi = Math.floor(height / 2); // sort of had to guess these values
+let hj = Math.floor(width / 2); // we start somewhere in the middle
 let tai = new Array(CONNECTED_KNOTS).fill(hi);
 let taj = new Array(CONNECTED_KNOTS).fill(hj);
 function setTail(knotIdx, i, j) {
